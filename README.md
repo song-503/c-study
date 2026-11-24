@@ -1,6 +1,6 @@
 # C Study
 
-WSL(Ubuntu) + gcc 환경에서 C 언어를 공부하며 정리한 기록
+WSL(Ubuntu) + gcc 환경에서 C 언어를 공부하며 정리
 
 ## 진도표
 
