@@ -16,7 +16,6 @@ WSL(Ubuntu) + gcc 환경에서 C 언어를 공부하며 정리
 |---|---|
 | OS | Windows + WSL2 (Ubuntu) |
 | 컴파일러 | gcc 15.2 (`build-essential`) |
-| 디버거 | gdb |
 | 에디터 | VS Code + WSL 확장 + C/C++ 확장 |
 
 ## 실행 방법
