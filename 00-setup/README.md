@@ -35,15 +35,6 @@ Windows에서 WSL(Ubuntu)을 설치하고, VS Code에서 C 파일을 단축키�
 ### 5. `gh auth login` 중 브라우저가 열리지 않음
 - 원인: WSL Interop(리눅스에서 Windows 프로그램 실행 기능)이 비활성화 상태
 - 해결: Windows 브라우저에서 `github.com/login/device`에 직접 접속해 코드 입력
-
-## 확인 문제
-<details>
-<summary>Q1. 컴파일과 링크는 각각 무엇을 하는 단계인가?</summary>
-
-(답 작성)
-</details>
-
-<details>
 <summary>Q2. <code>-g</code> 옵션 없이 컴파일하면 디버깅할 때 어떤 차이가 있나?</summary>
 
 (답 작성)
