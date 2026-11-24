@@ -18,7 +18,7 @@ Windows에서 WSL(Ubuntu)을 설치하고, VS Code에서 C 파일을 단축키�
 
 ### 1. `stdio.h: No such file or directory`
 - 원인: `apt install gcc`만 하면 컴파일러만 설치되고 C 표준 헤더(`libc6-dev`)가 빠질 수 있음
-- 해결: `build-essential` 설치 (gcc + 표준 헤더 + make 포함)
+- 해결: `build-essential` 설치 
 
 ### 2. F5를 누르면 디버거 목록에 Node.js만 나옴
 - 원인: C/C++ 확장이 Windows 쪽에만 있고 WSL 쪽에 설치되지 않음
@@ -35,7 +35,3 @@ Windows에서 WSL(Ubuntu)을 설치하고, VS Code에서 C 파일을 단축키�
 ### 5. `gh auth login` 중 브라우저가 열리지 않음
 - 원인: WSL Interop(리눅스에서 Windows 프로그램 실행 기능)이 비활성화 상태
 - 해결: Windows 브라우저에서 `github.com/login/device`에 직접 접속해 코드 입력
-<summary>Q2. <code>-g</code> 옵션 없이 컴파일하면 디버깅할 때 어떤 차이가 있나?</summary>
-
-(답 작성)
-</details>
