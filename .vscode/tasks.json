@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // F5(디버깅)용: 컴파일만 함. launch.json의 preLaunchTask가 이 이름을 사용하므로 이름 바꾸지 말 것
+      // 실행 파일은 build/<폴더>/<파일명> 에 생성 → 소스 폴더가 깔끔하게 유지됨
+      "label": "C: build active file",
+      "type": "shell",
+      "command": "mkdir -p \"${workspaceFolder}/build/${relativeFileDirname}\" && gcc -Wall -Wextra -g \"${file}\" -o \"${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}\" -lm",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      // Ctrl+F5 / Ctrl+Shift+B용: 컴파일 성공 시(&&) 바로 실행. 디버거를 안 거치므로 결과만 출력됨
+      "label": "C: build & run",
+      "type": "shell",
+      "command": "mkdir -p \"${workspaceFolder}/build/${relativeFileDirname}\" && gcc -Wall -Wextra -g \"${file}\" -o \"${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}\" -lm && \"${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}\"",
+      "options": { "cwd": "${fileDirname}" },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "echo": false,
+        "clear": true,
+        "showReuseMessage": false,
+        "panel": "shared",
+        "focus": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
